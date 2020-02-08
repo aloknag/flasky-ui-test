@@ -10,8 +10,9 @@ def create_fake_data(prefix='testuser'):
     Create Keyword "Create Fake Data"
     The keyword takes optional parameter to define username prefix generates a random username each time.
     and writes that data to a csv file to use later.
+    Faker is great library to generate fake test data in multiple locales.
     :param prefix:
-    :return:
+    :return: list of fake data for registration
     """
     fake = Faker(['it_IT', 'en_US', 'ja_JP'])
     username = prefix + str(uuid.uuid1()).split('-')[0]

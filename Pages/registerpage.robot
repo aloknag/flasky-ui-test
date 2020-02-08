@@ -2,7 +2,6 @@
 Documentation    Keywords related to register page
 
 Library             SeleniumLibrary
-Variables           ../variables/variables.py
 Resource            loginpage.robot
 
 *** Variables ***

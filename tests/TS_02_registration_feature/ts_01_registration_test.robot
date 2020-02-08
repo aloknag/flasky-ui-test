@@ -30,7 +30,7 @@ TC_02 Register a Existing User Using CSV Data
     # We are using Read CSV here, but this can be achieved using Fake Data too.
     # This is alternative apprach but requires csv file with registered user information
     @{data_from_csv}=   Read CSV File      ${test_data_file}
-    Log Many     @{data_from_csv}
-    Go To Register Page
-    Register User   ${data_from_csv}
-    Registration Should Fail
+    : FOR   ${row}  IN  @{data_from_csv}
+    \   Go To Register Page
+    \   Register User     @{row}
+    \   Registration Should Fail

@@ -38,10 +38,22 @@ defines variables, it can be different for different environments of testing.<br
 [optionally]: While running robot file, we can pass which variables.py to use.
 
 # How to use this repo to run tests
-git clone
-<br> 
-create a virtual environment using python 3.7. Inside the virtualenv install libraries.
-<br>
-pip install -r requirements.txt
-<br>
-robot --outputdir results  tests/
+- ``git clone https://github.com/aloknag/flasky-api-test.git``
+
+
+- create a virtual environment using python 3.7. Inside the virtualenv install libraries.
+Activate virtual env and install all dependencies.
+
+
+- ``pip install -r requirements.txt``
+
+- To Run all tests :
+
+- ``robot --outputdir results  tests/``
+
+
+## Results  
+  ![image](allure_report_01.png)
+  
+  ![image](allure_report_02.png)
+  

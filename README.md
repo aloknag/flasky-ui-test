@@ -15,7 +15,7 @@ Contains POM based robot files containing locators and Keywords to interact with
 
 results:
 <br>
-Contains test run results
+Contains test run results for the tests
 
 screenshots:
 <br>
